@@ -15,9 +15,9 @@ body {
     background-position: center;
 }
 
-@media (max-width: 868px) {
+@media (max-width: 968px) {
     body {
-    padding-top: 250px;
+    padding-top: 330px;
     }
 }
 
@@ -31,7 +31,7 @@ body {
     transition: 0.3s ease;
 }
 
-@media (max-width: 868px) {
+@media (max-width: 968px) {
     .newest-banner {
     height: 200px;
     margin: 20px;
@@ -73,7 +73,7 @@ body {
     opacity: 0.85;
     cursor: pointer;
 }
-@media (max-width: 868px) {
+@media (max-width: 968px) {
     .category-bar {
         overflow-x: scroll;      /* Make sure scroll is available on smaller screens */
     }
@@ -217,7 +217,7 @@ footer {
     font-weight: bold;
 }
 
-@media (max-width: 868px) {
+@media (max-width: 968px) {
     .product-detail-container {
     flex-direction: column;
     align-items: center;
@@ -373,14 +373,12 @@ footer {
     gap: 20px;
 }
 
-@media (max-width: 868px) {
+@media (max-width: 968px) {
     .navbar .nav-link {
         font-size: 0.8rem;
     }
 
-    .search-bar {
-        display: none;
-    }
+
 }
 
 .profile-background {
@@ -412,7 +410,7 @@ footer {
     transform: scale(1.1);
 }
 
-@media (max-width: 868px) {
+@media (max-width: 968px) {
     .profile-background {
         width: 40%;
         height: 100%;
