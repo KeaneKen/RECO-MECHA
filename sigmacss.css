@@ -25,19 +25,38 @@ body {
     transition: 0.3s ease;
 }
 
+@media (max-width: 768px) {
+    .newest-banner {
+    height: 200px;
+    margin: 20px;
+}
+}
+
 .newest-banner:hover {
     opacity: 0.9;
     cursor: pointer;
 }
 
 .category-bar {
+    display: flex;               /* Align items horizontally */
+    justify-content: space-around; /* Distribute the items */
+    align-items: center;
     padding-top: 0;
     background-size: cover;
+    overflow-x: auto;            /* Make the bar scrollable horizontally */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile devices */
+    white-space: nowrap;         /* Prevent items from wrapping to the next line */
+}
+
+.category-bar a {
+    display: inline-block;       /* Make each category a block to maintain horizontal layout */
+    flex-shrink: 0;              /* Prevent items from shrinking */
+    margin: 0 10px;              /* Optional: Add space between items */
 }
 
 .category-img {
     height: auto;
-    width: 150px;
+    width: 150px;                /* Control the size of the images */
     transition: 0.3s ease;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
     border-radius: 10px;
@@ -48,11 +67,13 @@ body {
     opacity: 0.85;
     cursor: pointer;
 }
-
 @media (max-width: 768px) {
+    .category-bar {
+        overflow-x: scroll;      /* Make sure scroll is available on smaller screens */
+    }
+
     .category-img {
-        width: 100px;  /* smaller image */
-        height: auto;
+        width: 100px;            /* Smaller images on mobile */
     }
 }
 
@@ -231,7 +252,8 @@ footer {
 }
 
 .rate-button {
-    border-radius: 10px;
+    margin-left: 150px;
+    border-radius: 50px;
     border: 2px solid #ffe92e;
     background-color: black;
     color: #ffe92e;
@@ -239,6 +261,7 @@ footer {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease;
+    width: 150px;
 }
 
 .rate-button:hover {
@@ -310,22 +333,75 @@ footer {
 }
 
 .track-button {
-    border-radius: 6px;           
-    border: 1px solid #2efcff;    
+    border-radius: 50px;           
+    border: 2px solid #2efcff;    
     background-color: black;
-    color: #ffe92e;
     padding: 5px 10px;            
-    font-size: 0.875rem;          
-    font-weight: normal;          
+    font-size: 0.875rem;                    
     cursor: pointer;
     transition: 0.3s ease;
+    width: 110px;
+    color: #2efcff;
+    font-weight: bold;
 }
 
 .track-button:hover {
     background-color: #2efcff;
+    color: black;
 }
 
 .navbar .nav-link:hover {
     transform: scale(1.1);
     transition: 0.2s ease;   /* smooth transition */
+}
+
+.search-bar {
+    margin-right: 150px;
+    display: block;
+    width: 45vw;
+    border-radius: 150px;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .search-bar {
+        display: none;
+    }
+}
+
+.profile-background {
+    border: white 2px solid;
+    color: white;
+    border-radius: 10px;
+    width: 130%;
+    height: 90%;
+    padding: 4px;
+}
+
+.profile-background:hover {
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.profile-background-selected {
+    border: white 2px solid;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    width: 130%;
+    height: 90%;
+    padding: 4px;
+}
+
+.profile-background-selected:hover {
+    transition: 0.3s ease;
+    transform: scale(1.1);
 }
