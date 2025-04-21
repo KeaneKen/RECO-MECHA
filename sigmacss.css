@@ -15,7 +15,7 @@ body {
     background-position: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     body {
     padding-top: 250px;
     }
@@ -31,7 +31,7 @@ body {
     transition: 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .newest-banner {
     height: 200px;
     margin: 20px;
@@ -73,7 +73,7 @@ body {
     opacity: 0.85;
     cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .category-bar {
         overflow-x: scroll;      /* Make sure scroll is available on smaller screens */
     }
@@ -217,7 +217,7 @@ footer {
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .product-detail-container {
     flex-direction: column;
     align-items: center;
@@ -373,7 +373,7 @@ footer {
     gap: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .navbar .nav-link {
         font-size: 0.8rem;
     }
@@ -412,7 +412,7 @@ footer {
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .profile-background {
         width: 40%;
         height: 100%;
