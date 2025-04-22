@@ -15,7 +15,7 @@ body {
     background-position: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
     body {
     padding-top: 330px;
     }
@@ -31,7 +31,7 @@ body {
     transition: 0.3s ease;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
     .newest-banner {
     height: 200px;
     margin: 20px;
@@ -73,7 +73,7 @@ body {
     opacity: 0.85;
     cursor: pointer;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
     .category-bar {
         overflow-x: scroll;      /* Make sure scroll is available on smaller screens */
     }
@@ -217,7 +217,7 @@ footer {
     font-weight: bold;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
     .product-detail-container {
     flex-direction: column;
     align-items: center;
@@ -356,9 +356,13 @@ footer {
     color: black;
 }
 
+.navbar .nav-link {
+    color: white;
+}
+
 .navbar .nav-link:hover {
-    transform: scale(1.1);
-    transition: 0.2s ease;   /* smooth transition */
+    color: #0dcaf0;
+    transition: 0.5s ease;   /* smooth transition */
 }
 
 .search-bar {
@@ -373,7 +377,7 @@ footer {
     gap: 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
     .navbar .nav-link {
         font-size: 0.8rem;
     }
@@ -392,7 +396,8 @@ footer {
 
 .profile-background:hover {
     transition: 0.3s ease;
-    transform: scale(1.1);
+    background-color: white;
+    color: black;
 }
 
 .profile-background-selected {
@@ -405,12 +410,9 @@ footer {
     padding: 4px;
 }
 
-.profile-background-selected:hover {
-    transition: 0.3s ease;
-    transform: scale(1.1);
-}
 
-@media (max-width: 1000px) {
+
+@media (max-width: 1400px) {
     .profile-background {
         width: 40%;
         height: 100%;
@@ -449,3 +451,4 @@ footer {
 .orbitron-text {
     font-family: 'Orbitron', sans-serif;
 }
+
