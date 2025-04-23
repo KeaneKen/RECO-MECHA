@@ -289,6 +289,14 @@ footer {
     z-index: 999;
 } 
 
+@media (max-width: 1400px) {
+    .popup.content{
+    width: 90vw; /* take up 90% of the viewport width */
+    font-size: 1.1rem; /* slightly larger text if you want */
+    padding: 25px 20px; /* slightly larger padding */
+    }
+}
+
 .popup-card:target {
     visibility: visible;
     opacity: 1;
