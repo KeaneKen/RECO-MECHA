@@ -274,6 +274,20 @@ footer {
     width: 150px;
 }
 
+@media (max-width: 1400px) {
+    .rate-button {
+        margin-left: 370px;
+        border-radius: 50px;
+        border: 2px solid #ffe92e;
+        background-color: black;
+        color: #ffe92e;
+        padding: 5px 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease;
+        width: 150px;
+    }
+    }
 .rate-button:hover {
     background-color: #ffe92e;
     color: black;
@@ -365,6 +379,22 @@ footer {
     color: #2efcff;
     font-weight: bold;
 }
+@media (max-width: 1400px) {
+    .track-button {
+        align-items: center;
+        border-radius: 50px;           
+        border: 2px solid #2efcff;    
+        background-color: black;
+        padding: 5px 10px;            
+        font-size: 0.875rem;                    
+        cursor: pointer;
+        transition: 0.3s ease;
+        width: 150px;
+        height: 40px;
+        color: #2efcff;
+        font-weight: bold;
+    }
+    }
 
 .track-button:hover {
     background-color: #2efcff;
@@ -492,13 +522,12 @@ footer {
   }
   
   /* Square image on small screens */
-  @media (max-width: 1400px) {
+@media (max-width: 1400px) {
     .aboutme-img {
-      aspect-ratio: 1 / 1;
-      height: auto;
-      width: 100%;
-      max-width: none;
-      max-height: none;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    width: 100%;
+    max-width: none;
+    max-height: none;
     }
-  }
-  
+}
