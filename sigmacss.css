@@ -1,6 +1,7 @@
 html, body {
-    height: 100%;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -12,13 +13,18 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center top;
 }
 
 @media (max-width: 1400px) {
     body {
     padding-top: 330px;
+    height: 70%;
     }
+}
+
+footer {
+    margin-top: auto;
 }
 
 .newest-banner {
@@ -121,11 +127,9 @@ body {
 }
 
 .content-wrapper {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
     flex: 1;
-}
-
-footer {
-    margin-top: auto; /* pushes footer to the bottom when content is short */
 }
 
 .product-detail-container {
@@ -290,12 +294,15 @@ footer {
 } 
 
 @media (max-width: 1400px) {
-    .popup.content{
-    width: 90vw; /* take up 90% of the viewport width */
-    font-size: 1.1rem; /* slightly larger text if you want */
-    padding: 25px 20px; /* slightly larger padding */
+    .popup-card .popup-content {
+    width: 70vw !important;
+    height: 15vh !important;
+    font-size: 3.0rem !important;
+    padding: 25px 25px !important;
+    overflow-y: auto;
     }
 }
+
 
 .popup-card:target {
     visibility: visible;
@@ -389,8 +396,6 @@ footer {
     .navbar .nav-link {
         font-size: 0.8rem;
     }
-
-
 }
 
 .profile-background {
@@ -460,3 +465,40 @@ footer {
     font-family: 'Orbitron', sans-serif;
 }
 
+@media (max-width: 1400px) {
+    .card-body {
+      padding: 0.5rem;
+    }
+  
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    .card-text {
+      font-size: 0.8rem;
+    }
+  
+    .card img {
+      max-height: 200px;
+    }
+  }
+  
+  .aboutme-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 500px; /* Limit width on large screens */
+    max-height: 500px;
+  }
+  
+  /* Square image on small screens */
+  @media (max-width: 1400px) {
+    .aboutme-img {
+      aspect-ratio: 1 / 1;
+      height: auto;
+      width: 100%;
+      max-width: none;
+      max-height: none;
+    }
+  }
+  
