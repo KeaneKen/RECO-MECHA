@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     overflow-x: hidden;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;;
 }
 
 
@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center top;
+    min-height: 100vh;
 }
 
 @media (max-width: 1400px) {
@@ -127,9 +128,9 @@ footer {
 }
 
 .content-wrapper {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-detail-container {
