@@ -155,6 +155,7 @@ footer {
     height: auto;
     object-fit: contain;
     border-radius: 15px;
+    background-color: white;
 }
 
 .product-info {
@@ -311,6 +312,15 @@ footer {
 @media (max-width: 1400px) {
     .popup-card .popup-content {
     width: 70vw !important;
+    height: 15vh !important;
+    font-size: 3.0rem !important;
+    padding: 25px 25px !important;
+    overflow-y: auto;
+    }
+}
+@media (max-width: 375px) {
+    .popup-card .popup-content {
+    width: 40% !important;
     height: 15vh !important;
     font-size: 3.0rem !important;
     padding: 25px 25px !important;
